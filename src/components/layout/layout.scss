@@ -1,0 +1,14 @@
+@import "../../style/utilities/units";
+
+$padding: 24px;
+$max-width: 1440px;
+
+#layout {
+  width: 100vw;
+  padding: $padding;
+
+  @include breakpoint(desktop) {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
