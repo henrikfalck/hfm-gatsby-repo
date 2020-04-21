@@ -1,0 +1,57 @@
+{
+  "Breakpoint": {
+    "prefix": [
+      "breakpoint"
+    ],
+    "body": [
+      "@include breakpoint(${1|phone,tablet,laptop,desktop|}) {",
+      "  $2",
+      "}$0"
+    ],
+    "description": "Add a breakpoint."
+  },
+  "Color scheme": {
+    "prefix": [
+      "color-scheme"
+    ],
+    "body": [
+      "@include color-scheme(${1|dark,light|}) {",
+      "  $2",
+      "}$0"
+    ],
+    "description": "Add styling for the users preferred color scheme."
+  },
+  "Font face": {
+    "prefix": [
+      "font-face"
+    ],
+    "body": [
+      "@font-face {",
+      "font-family: '$1', ${2|sans-serif,serif,monospace|};",
+      "font-weight: ${3|100,200,300,400,500,600,700,800,900|};",
+      "font-style: ${4|normal,italic,oblique|};",
+      "font-display: ${5|auto,block,fallback,swap|};",
+      "src: url('$6') format('${7|woff,woff2,truetype,opentype,svg,embedded-opentype|}')",
+      "}$0"
+    ],
+    "description": "Create a new @font-face rule."
+  },
+  "Font family": {
+    "prefix": [
+      "font-family"
+    ],
+    "body": [
+      "font-family: '$1', ${2|sans-serif,serif,monospace|};",
+    ],
+    "description": "Add a font family."
+  },
+  "Import": {
+    "prefix": [
+      "import"
+    ],
+    "body": [
+      "@import './$1'; $0"
+    ],
+    "description": "Import another SCSS file."
+  }
+}

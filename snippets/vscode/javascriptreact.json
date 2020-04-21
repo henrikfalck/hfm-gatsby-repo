@@ -1,0 +1,21 @@
+{
+  "Import": {
+    "prefix": [
+      "import"
+    ],
+    "body": [
+      "import { $1 } from '$0:module'"
+    ]
+  },
+  "Wrapper component": {
+    "prefix": [
+      "wrapper"
+    ],
+    "body": [
+      "<Wrapper width={$1:1440} ${2|center, |}>",
+      "  $0",
+      "</Wrapper>"
+    ],
+    "description": "Insert a wrapper component"
+  }
+}
