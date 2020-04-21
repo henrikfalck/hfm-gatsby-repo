@@ -15,11 +15,32 @@
   },
   "dependencies": {
     "gatsby": "^2.20.25",
+    "gatsby-image": "^2.3.4",
+    "gatsby-plugin-google-analytics": "^2.2.4",
+    "gatsby-plugin-manifest": "^2.3.6",
+    "gatsby-plugin-offline": "^3.1.4",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-sass": "^2.2.3",
+    "gatsby-plugin-sharp": "^2.5.6",
+    "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-transformer-sharp": "^2.4.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "prettier": "2.0.4"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/scss.json"
+      }
+    ]
   },
   "repository": {
     "type": "git",

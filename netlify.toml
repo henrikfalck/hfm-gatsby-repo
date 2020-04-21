@@ -1,0 +1,13 @@
+# netlify.toml
+
+## Uncomment to redirect from certain URLs.
+## One example is /wp-admin.
+#[[redirects]]
+#  from = "/"
+#  to = "/"
+#  status = 301
+#  force = true
+
+[[plugins]]
+# Speed up deploys
+package = "netlify-plugin-gatsby-cache"
