@@ -27,11 +27,11 @@
     ],
     "body": [
       "@font-face {",
-      "font-family: '$1', ${2|sans-serif,serif,monospace|};",
-      "font-weight: ${3|100,200,300,400,500,600,700,800,900|};",
-      "font-style: ${4|normal,italic,oblique|};",
-      "font-display: ${5|auto,block,fallback,swap|};",
-      "src: url('$6') format('${7|woff,woff2,truetype,opentype,svg,embedded-opentype|}')",
+      "  font-family: '$1', ${2|sans-serif,serif,monospace|};",
+      "  font-weight: ${3|100,200,300,400,500,600,700,800,900|};",
+      "  font-style: ${4|normal,italic,oblique|};",
+      "  font-display: ${5|auto,block,fallback,swap|};",
+      "  src: url('$6') format('${7|woff,woff2,truetype,opentype,svg,embedded-opentype|}')",
       "}$0"
     ],
     "description": "Create a new @font-face rule."
