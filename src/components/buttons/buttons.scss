@@ -1,0 +1,46 @@
+@import "../../style/styles.scss";
+
+$button-color: black;
+$button-text-color: white;
+$border-thickness: 2px;
+
+.button {
+  padding: 0.8rem 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: $button-color;
+  color: $button-text-color;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+
+  &.secondary {
+    padding: calc(0.8rem - $border-thickness) calc(1.5rem - $border-thickness);
+    background: white;
+    border: $border-thickness solid $button-color;
+    color: $button-color;
+  }
+
+  &.full-width {
+    @include breakpoint(phone) {
+      width: 100%;
+    }
+  }
+
+  &:hover {
+    background: rgba($button-color, 0.8);
+
+    &.secondary {
+      background: rgba($button-color, 0.1);
+    }
+  }
+
+  & + & {
+    margin-left: 0.5rem;
+
+    @include breakpoint(phone) {
+      margin-left: 0;
+      margin-top: 0.5rem;
+    }
+  }
+}
