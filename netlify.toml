@@ -17,13 +17,15 @@ package = "netlify-plugin-gatsby-cache"
 package = "netlify-plugin-a11y"
   
   [plugins-input]
-    # Give an array of directories and/or paths to check
-    checkPaths = ['/']
+  # Give an array of directories and/or paths to html files to run a11y on
+  checkPaths = [
+    "/"
+  ]
 
   # Optional configs
-    # "warn" -> Don't fail the build on errors
-    # If you want the build to fail, comment out the next line
-    resultMode = "warn"
+  # "warn" -> Don't fail the build on errors
+  # If you want the build to fail, comment out the next line
+  resultMode = "warn"
   
   ## Debug
   ## Extra logging
