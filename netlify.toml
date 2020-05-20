@@ -1,7 +1,7 @@
 # netlify.toml
 
 ## Uncomment to redirect from certain URLs.
-## One example is /wp-admin.
+## One example is /wp-admin on an Wordpress installation.
 #[[redirects]]
 #  from = "/"
 #  to = "/"
@@ -9,5 +9,22 @@
 #  force = true
 
 [[plugins]]
-# Speed up deploys
+# Speed up Gatsby deploys
 package = "netlify-plugin-gatsby-cache"
+
+[[plugins]]
+# Check for accessibility
+package = "netlify-plugin-a11y"
+  
+  [plugins-input]
+    # Give an array of directories and/or paths to check
+    checkPaths = ['/']
+
+  # Optional configs
+    # "warn" -> Don't fail the build on errors
+    # If you want the build to fail, comment out the next line
+    resultMode = "warn"
+  
+  ## Debug
+  ## Extra logging
+  #debugMode = true
