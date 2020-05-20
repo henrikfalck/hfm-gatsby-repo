@@ -31,8 +31,8 @@ The repo uses Netlify packages for speed and accessibility checks.
 
 ## To-do
 
-[ ] Add Lighthouse checks
-[ ] Fix icons
-[ ] Finish base components (`callout`, `table`, `tabs`, `lightbox`, `accordion`, `modal`, `slideshow`)
+- [ ] Add Lighthouse checks
+- [ ] Fix icons
+- [ ] Finish base components (`callout`, `table`, `tabs`, `lightbox`, `accordion`, `modal`, `slideshow`)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/henrikfalck/hfm-gatsby-repo)
