@@ -1,0 +1,25 @@
+@import "../../../style/styles.scss";
+
+.flexbox-container {
+  display: flex;
+  width: 100%;
+  background: red;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include breakpoint(tablet) {
+    flex-direction: column;
+
+    .flexbox-child {
+      width: inherit !important;
+    }
+  }
+
+  .flexbox-child {
+    padding: 16px;
+
+    &.text {
+      background-color: #eeeeee;
+    }
+  }
+}
