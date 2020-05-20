@@ -1,15 +1,15 @@
 // Base
-@import "./base/colors";
-@import "./base/reset";
+@import "./base/_colors";
+@import "./base/_reset";
 
 // Pages
-@import "./pages/error";
-@import "./pages/pages-global";
+@import "./pages/_error";
+@import "./pages/_pages-global";
 
 // Typography
-@import "./typography/typography";
+@import "./typography/_typography";
 
 // Utilities
-@import "./utilities/breakpoints";
-@import "./utilities/mixins";
-@import "./utilities/units";
+@import "../style/utilities/breakpoints";
+@import "./utilities/_mixins";
+@import "./utilities/_units";
