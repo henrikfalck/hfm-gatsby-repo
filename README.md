@@ -1,6 +1,6 @@
 # Gatsby repository template
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![Code size](https://img.shields.io/github/languages/code-size/henrikfalck/hfm-gatsby-repo)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) ![Code size](https://img.shields.io/github/languages/code-size/henrikfalck/hfm-gatsby-repo)
 
 ## Contents
 
