@@ -31,7 +31,7 @@ The repo uses Netlify packages for speed and accessibility checks.
 
 ## To-do
 
-- [x] Add Lighthouse checks
+- [ ] Add Lighthouse checks
 - [ ] Fix icons
 - [ ] Finish base components (`callout`, `table`, `tabs`, `lightbox`, `accordion`, `modal`, `slideshow`)
 
