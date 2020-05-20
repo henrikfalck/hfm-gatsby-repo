@@ -1,12 +1,13 @@
 # Gatsby repository template
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![Code size](https://img.shields.io/github/languages/code-size/henrikfalck/hfm-gatsby-repo)
+
 ## Contents
 
 ```
 .
-├── node_modules
 ├── snippets
-│   ├── javascript.json
+│   ├── javascriptreact.json
 │   └── scss.json
 ├── src
 │   ├── components
@@ -25,5 +26,13 @@
 ├── .prettierrc
 └── netlify.toml
 ```
+
+The repo uses Netlify packages for speed and accessibility checks.
+
+## To-do
+
+[] Add Lighthouse checks
+[] Fix icons
+[] Finish base components (`callout`, `table`, `tabs`, `lightbox`, `accordion`, `modal`, `slideshow`)
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/henrikfalck/hfm-gatsby-repo)
