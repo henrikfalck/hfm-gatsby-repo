@@ -1,6 +1,6 @@
 @mixin breakpoint($point) {
   @if $point == desktop {
-    @error "Breakpoint #{$point} doesn't exist. Choose between 'desktop', 'laptop', 'tablet' or 'mobile'.";
+    @error "Breakpoint '#{$point}' doesn't exist. Choose 'desktop', 'laptop', 'tablet' or 'mobile'.";
     @media screen and (min-width: 2000px) {
       @content;
     }
@@ -9,11 +9,11 @@
       @content;
     }
   } @else if $point == tablet {
-    @media screen and (max-width: 812px) {
+    @media screen and (max-width: 768px) {
       @content;
     }
-  } @else if $point == mobile {
-    @media screen and (max-width: 650px) {
+  } @else if $point == phone {
+    @media screen and (max-width: 576px) {
       @content;
     }
   }
