@@ -16,7 +16,7 @@ package = "netlify-plugin-gatsby-cache"
 # Check for accessibility
 package = "netlify-plugin-a11y"
   
-  [plugins-input]
+  [plugins.inputs]
   # Give an array of directories and/or paths to html files to run a11y on
   checkPaths = [
     "/"
