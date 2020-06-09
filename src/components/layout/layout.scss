@@ -1,14 +1,12 @@
 @import "../../style/utilities/units";
+@import "../../style/styles.scss";
 
 $padding: 24px;
 $max-width: 1440px;
 
 #layout {
   width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: $padding;
-
-  @include breakpoint(desktop) {
-    max-width: $max-width;
-    margin: 0 auto;
-  }
 }
