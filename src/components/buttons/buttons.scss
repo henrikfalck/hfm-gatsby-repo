@@ -3,12 +3,13 @@
 $button-color: black;
 $button-text-color: white;
 $border-thickness: 2px;
+$border-radius: 4px;
 
 .button {
   padding: 0.8rem 1.5rem;
-  outline: none;
+  outline: 2px solid darkslategrey;
   border: none;
-  border-radius: 4px;
+  border-radius: $border-radius;
   background: $button-color;
   color: $button-text-color;
   transition: background 0.3s ease-in-out;
