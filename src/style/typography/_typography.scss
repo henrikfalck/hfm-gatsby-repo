@@ -1,5 +1,43 @@
 @import "./font-files/fontface";
 
+$base-size: 20px;
+$base-ratio: 1.4;
+
 body {
-  font-fa
+  font-family: "Inter", sans-serif;
+  font-size: $base-size; // 1rem
+}
+
+h1 {
+  font-size: 1rem * ($base-ratio * 6);
+}
+
+h2 {
+  font-size: 1rem * ($base-ratio * 5);
+}
+
+h3 {
+  font-size: 1rem * ($base-ratio * 4);
+}
+
+h4 {
+  font-size: 1rem * ($base-ratio * 3);
+}
+
+h5 {
+  font-size: 1rem * ($base-ratio * 2);
+}
+
+h6 {
+  font-size: 1rem * $base-ratio;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  @extend p;
+  color: inherit;
+  text-decoration: solid black;
 }
