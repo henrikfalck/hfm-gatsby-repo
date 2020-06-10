@@ -1,0 +1,40 @@
+@import "../../style/styles.scss";
+
+.callout {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  padding: 24px;
+  background-color: #f7f7f7;
+  flex-direction: row;
+  border-radius: 4px;
+
+  @include breakpoint(phone) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &.callout-type__warning {
+    background-color: rgb(243, 70, 47);
+  }
+
+  &.callout-type__info {
+    background-color: rgb(216, 216, 247);
+  }
+
+  .callout__icon {
+    padding-right: 24px;
+    height: inherit;
+
+    svg {
+      height: 32px;
+      width: 32px;
+      fill: black;
+    }
+  }
+
+  .callout__content {
+    width: auto;
+  }
+}
