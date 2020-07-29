@@ -12,3 +12,5 @@ const Wrapper = ({ width, center, children }) => (
     {children}
   </div>
 )
+
+export default Wrapper
