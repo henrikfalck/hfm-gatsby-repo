@@ -9,23 +9,23 @@ body {
 }
 
 h1 {
-  font-size: 1rem * ($base-ratio * 6);
-}
-
-h2 {
-  font-size: 1rem * ($base-ratio * 5);
-}
-
-h3 {
-  font-size: 1rem * ($base-ratio * 4);
-}
-
-h4 {
   font-size: 1rem * ($base-ratio * 3);
 }
 
-h5 {
+h2 {
+  font-size: 1rem * ($base-ratio * 2.7);
+}
+
+h3 {
+  font-size: 1rem * ($base-ratio * 2.4);
+}
+
+h4 {
   font-size: 1rem * ($base-ratio * 2);
+}
+
+h5 {
+  font-size: 1rem * ($base-ratio * 1.8);
 }
 
 h6 {
