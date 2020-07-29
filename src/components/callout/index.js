@@ -11,7 +11,7 @@ function Callout({ title, type, children, center }) {
         style={{ margin: center ? "0 auto" : "0" }}
       >
         <div className="callout__icon">
-          <Icon type={type} />
+          <Icon variant={type} />
         </div>
         <div className="callout__content">
           <h2>{title}</h2>
