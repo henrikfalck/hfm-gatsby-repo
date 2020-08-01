@@ -1,9 +1,9 @@
 import React from "react"
-import "./flexbox.scss"
+import "./flex.scss"
 
-export const Flexbox = ({ children, height, width }) => (
+export const Flex = ({ children, height, width }) => (
   <div
-    className="flexbox-container"
+    className="flex-container"
     style={{
       height: height || "auto",
       width: width || "100%",
@@ -15,7 +15,7 @@ export const Flexbox = ({ children, height, width }) => (
 
 export const FlexChild = ({ children, order, width, className, id }) => (
   <div
-    className={`flexbox-child ${className || ""}`}
+    className={`flex-child ${className || ""}`}
     id={id}
     style={{
       order: order ? order : "auto",
