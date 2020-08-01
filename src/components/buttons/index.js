@@ -2,14 +2,14 @@ import React from "react"
 import Icon from "../icons/index"
 import "./buttons.scss"
 
-const Button = ({ children, hasIcon, iconRight, iconLeft, type }) => (
-  <button className={`button ${(hasIcon && "has-icon") || ""}`}>
-    {iconLeft && <Icon type={type} variant={iconLeft} className="icon-left" />}
+export const Button = ({ children, icon, iconVariant, disabled, type }) => (
+  <button className={`button` + `${icon ? " has-icon" : ""}`} type={type}>
+    {icon === "left" ? <Icon type={iconVariant} className="icon-left" /> : ""}
     {children}
-    {iconRight && (
-      <Icon type={type} variant={iconRight} className="icon-right" />
-    )}
+    {icon === "right" ? <Icon type={iconVariant} className="icon-right" /> : ""}
   </button>
 )
 
-export default Button
+export const ButtonGroup = ({ children, orientation, align }) => (
+  <div className="button-group">{children}</div>
+)
