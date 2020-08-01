@@ -1,17 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Flexbox, FlexChild } from "../flexbox/index"
+import { Flex, FlexChild } from "../flex/index"
 import "./footer.scss"
 
 const Footer = () => (
   <footer>
-    <Flexbox>
+    <Flex>
       <FlexChild>
         <Link to="/">
           <b>Gatsby starter</b>
         </Link>
       </FlexChild>
-    </Flexbox>
+    </Flex>
   </footer>
 )
 
