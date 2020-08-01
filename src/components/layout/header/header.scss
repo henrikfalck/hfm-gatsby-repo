@@ -1,0 +1,12 @@
+header {
+  width: 100vw;
+  background-color: #f7f7f7;
+  padding: 24px;
+  justify-content: space-between;
+  display: inline-flex !important;
+
+  .logo-link {
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+}
