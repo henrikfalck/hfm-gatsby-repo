@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import "./flex.scss"
 
 export const Flex = ({ children, height, width }) => (
@@ -18,10 +19,15 @@ export const FlexChild = ({ children, order, width, className, id }) => (
     className={`flex-child ${className || ""}`}
     id={id}
     style={{
-      order: order ? order : "auto",
-      width: width ? width : "auto",
+      order: order,
+      width: width,
     }}
   >
     {children}
   </div>
 )
+
+FlexChild.defaultProps = {
+  order: 0,
+  width: "auto",
+}
