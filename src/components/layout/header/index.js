@@ -1,17 +1,16 @@
 import React from "react"
 import { Link } from "gatsby"
-import Wrapper from "../wrapper"
 import Navigation from "../navigation"
 import "./header.scss"
 
+export const Logo = () => <b>Gatsby Starter</b>
+
 const Header = () => (
   <header>
-    <Wrapper width="768">
-      <Link to="/">
-        <b>Gatsby starter</b>
-      </Link>
-      <Navigation />
-    </Wrapper>
+    <Link className="logo-link" to="/">
+      <Logo />
+    </Link>
+    <Navigation />
   </header>
 )
 
