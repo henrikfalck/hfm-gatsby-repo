@@ -6,8 +6,8 @@ export const Flex = ({ children, height, width }) => (
   <div
     className="flex-container"
     style={{
-      height: height || "auto",
-      width: width || "100%",
+      height: height ? height : "auto",
+      width: width ? width : "auto",
     }}
   >
     {children}
@@ -19,8 +19,8 @@ export const FlexChild = ({ children, order, width, className, id }) => (
     className={`flex-child ${className || ""}`}
     id={id}
     style={{
-      order: order,
-      width: width,
+      order: order ? order : "auto",
+      width: width ? width : "auto",
     }}
   >
     {children}
@@ -30,4 +30,12 @@ export const FlexChild = ({ children, order, width, className, id }) => (
 FlexChild.defaultProps = {
   order: 0,
   width: "auto",
+}
+
+Flex.propTypes = {
+  children: PropTypes.element.isRequired,
+}
+
+Flex.defaultProps = {
+  width: "100vw",
 }
