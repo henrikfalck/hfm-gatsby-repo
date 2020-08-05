@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 const Wrapper = ({ width, center, children }) => (
   <div
@@ -12,5 +13,9 @@ const Wrapper = ({ width, center, children }) => (
     {children}
   </div>
 )
+
+Wrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+}
 
 export default Wrapper
