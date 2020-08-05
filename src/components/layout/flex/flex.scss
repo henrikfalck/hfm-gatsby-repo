@@ -1,20 +1,20 @@
 @import "../../../style/styles.scss";
 
-.flexbox-container {
-  display: flex;
-  width: 100%;
+.flex-container {
+  display: inline-flex;
+  max-width: 100vw;
   flex-direction: row;
   justify-content: space-between;
 
   @include breakpoint(tablet) {
     flex-direction: column;
 
-    .flexbox-child {
+    .flex-child {
       width: inherit !important;
     }
   }
 
-  .flexbox-child {
+  .flex-child {
     padding: 16px;
 
     &.text {
