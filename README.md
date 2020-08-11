@@ -32,18 +32,6 @@ The template utilises Netlify packages for speed and accessibility checks (a11y)
 
 ## To-do
 
-[] Publish as NPM package
-[] Finish components
-[] `accordion`
-[] `callout`
-[] `card`
-[] `codeblock`
-[] `lightbox`
-[] `modal`
-[] `slideshow`
-[] `table`
-[] `tabs`
-[] Basic page components(?)
-[] Article
-[] Page
-[] Technical page
+[ ] Publish as NPM package
+[ ] Finish components
+[ ] Basic page components(?)
