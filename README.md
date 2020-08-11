@@ -7,8 +7,9 @@
 ```
 .
 ├── snippets
-│   ├── javascriptreact.json
-│   └── scss.json
+│   └── vscode
+│      ├── javascriptreact.json
+│      └── scss.json
 ├── src
 │   ├── components
 │   ├── pages
@@ -27,12 +28,22 @@
 └── netlify.toml
 ```
 
-The repo uses Netlify packages for speed and accessibility checks.
+The template utilises Netlify packages for speed and accessibility checks (a11y), including automatic Lighthouse performance testing.
 
 ## To-do
 
-- [ ] Add Lighthouse checks (either Netlify plugin or Github action)
-- [ ] Fix icons
-- [ ] Finish base components (`callout`, `table`, `tabs`, `lightbox`, `accordion`, `modal`, `slideshow`)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/henrikfalck/hfm-gatsby-repo)
+[] Publish as NPM package
+[] Finish components
+[] `accordion`
+[] `callout`
+[] `card`
+[] `codeblock`
+[] `lightbox`
+[] `modal`
+[] `slideshow`
+[] `table`
+[] `tabs`
+[] Basic page components(?)
+[] Article
+[] Page
+[] Technical page
