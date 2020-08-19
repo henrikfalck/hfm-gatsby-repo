@@ -30,15 +30,11 @@ export const Button = ({
     <a href={href}>
       {iconAlignment === "left" || iconAlignment === null ? (
         <Icon variant={iconVariant} className="icon-left" />
-      ) : (
-        ""
-      )}
+      ) : null}
       <span className="button-text">{children}</span>
       {iconAlignment === "right" ? (
         <Icon variant={iconVariant} className="icon-right" />
-      ) : (
-        ""
-      )}
+      ) : null}
     </a>
   </button>
 )
