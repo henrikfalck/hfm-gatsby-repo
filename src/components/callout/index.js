@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Icon from "../icon"
 import "./callout.scss"
 function Callout({ title, type, children, center }) {
@@ -32,3 +33,14 @@ function Callout({ title, type, children, center }) {
 }
 
 export default Callout
+
+Callout.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.element.isRequired,
+}
+
+Callout.defaultProps = {
+  title: "Lorem ipsum dolor",
+  children:
+    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+}
