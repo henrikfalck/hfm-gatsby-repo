@@ -7,27 +7,44 @@ $border-radius: 4px;
 
 .button-group {
   display: inline-flex;
-  flex-direction: row;
   width: auto;
+
+  &[orientation="row"] {
+    .button + .button {
+      margin: 0 $unit300 !important;
+    }
+  }
+
+  &[orientation="column"] {
+    flex-direction: column;
+
+    .button + .button {
+      margin-top: $unit200;
+    }
+  }
 }
 
 .button {
-  min-height: 44pt;
   padding: 0.8rem 1.5rem;
-  border: 2px solid black;
+  border: $border-thickness solid #000000dc;
+  border-radius: $border-radius;
   transition: background 0.3s ease-in-out;
   cursor: pointer;
 
   a {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
   }
 
   &[button-type="primary"] {
-    background: black;
+    background: $button-color;
     color: white;
 
     &:hover {
-      background: adjust-color($color: #000000, $lightness: 20%);
+      background: adjust-color($color: $button-color, $lightness: 20%);
     }
   }
 
@@ -57,30 +74,30 @@ $border-radius: 4px;
   &.has-icon {
     display: inline-flex;
 
+    .button-text {
+      display: inline-block;
+      position: relative;
+      top: -2px;
+    }
+
     // Icons inside of button
     .icon {
       fill: white;
-    }
+      display: inline-block;
+      position: relative;
+      top: 2px;
 
-    .icon-left {
-      margin-right: 8px;
-    }
+      &.icon-left {
+        margin-right: 12px;
+      }
 
-    .icon-right {
-      margin-left: 8px;
+      &.icon-right {
+        margin-left: 12px;
+      }
     }
   }
 
   &:focus {
     outline-color: darkslategrey;
-  }
-
-  & + & {
-    margin-left: 1rem;
-
-    @include breakpoint(phone) {
-      margin-left: 0;
-      margin-top: 0.5rem;
-    }
   }
 }
