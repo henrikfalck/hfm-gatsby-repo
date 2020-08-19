@@ -1,9 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Icon from "../icons/index"
+import Icon from "../icon/index"
 import "./buttons.scss"
 
-// TODO: Add default props value to button text ("Lorem ipsum")
 //? Could the icon statements be shortened?
 export const Button = ({
   children,
@@ -20,10 +19,10 @@ export const Button = ({
       `button` +
       `${iconVariant ? " has-icon" : ""}` +
       `${dark ? " dark" : ""}` +
-      `${fullWidth ? " button--full-width" : ""}` +
-      `${dark ? " button--dark" : ""}`
+      `${fullWidth ? " button--full-width" : ""}`
     }
     button-type={type}
+    color-mode={dark}
     style={{
       order: order ? order : null,
     }}
@@ -45,13 +44,7 @@ export const Button = ({
 )
 
 export const ButtonGroup = ({ children, orientation, align }) => (
-  <div
-    className="button-group"
-    style={{
-      flexDirection: orientation, // Column or row (default = row)
-      // alignContent: align,
-    }}
-  >
+  <div className="button-group" orientation={orientation} alignment={align}>
     {children}
   </div>
 )
@@ -71,4 +64,5 @@ ButtonGroup.propTypes = {
 
 ButtonGroup.defaultProps = {
   orientation: "row",
+  // alignment: flex-start
 }
