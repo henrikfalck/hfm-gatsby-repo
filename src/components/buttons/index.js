@@ -28,7 +28,7 @@ export const Button = ({
     }}
   >
     <a href={href}>
-      {iconAlignment === "left" || iconAlignment === null ? (
+      {iconAlignment === "left" (
         <Icon variant={iconVariant} className="icon-left" />
       ) : null}
       <span className="button-text">{children}</span>
@@ -51,6 +51,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   children: "Lorem ipsum",
+  iconAlignment: "left",
   type: "primary",
 }
 
