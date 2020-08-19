@@ -1,5 +1,5 @@
 import React from "react"
-import Icon from "../icons"
+import Icon from "../icon"
 import "./callout.scss"
 function Callout({ title, type, children, center }) {
   const hasIcon = type
