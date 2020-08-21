@@ -6,7 +6,7 @@ import "./header.scss"
 export const Logo = () => <b>Gatsby Starter</b>
 
 const Header = () => (
-  <header>
+  <header className="main-header">
     <Link className="logo-link" to="/">
       <Logo />
     </Link>
