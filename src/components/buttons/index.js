@@ -3,37 +3,37 @@ import PropTypes from "prop-types"
 import Icon from "../icon/index"
 import "./buttons.scss"
 
-//? Could the icon statements be shortened?
 export const Button = ({
   children,
-  dark,
+  //colorOverride,
+  fullWidth,
   href,
   iconAlignment,
-  iconVariant,
+  icon,
+  inverted,
   order,
+  //size,
   type,
-  fullWidth,
 }) => (
   <button
     className={
       `button` +
-      `${iconVariant ? " has-icon" : ""}` +
-      `${dark ? " dark" : ""}` +
+      `${icon ? " has-icon" : ""}` +
+      `${inverted ? " inverted" : ""}` +
       `${fullWidth ? " button--full-width" : ""}`
     }
     button-type={type}
-    color-mode={dark}
     style={{
       order: order ? order : null,
     }}
   >
     <a href={href}>
-      {iconAlignment === "left" ? (
-        <Icon variant={iconVariant} className="icon-left" />
+      {icon && iconAlignment === "left" ? (
+        <Icon variant={icon} className="icon-left" />
       ) : null}
       <span className="button-text">{children}</span>
-      {iconAlignment === "right" ? (
-        <Icon variant={iconVariant} className="icon-right" />
+      {icon && iconAlignment === "right" ? (
+        <Icon variant={icon} className="icon-right" />
       ) : null}
     </a>
   </button>
